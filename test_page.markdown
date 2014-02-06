@@ -2,4 +2,4 @@
 Hi there
 ---
 
-This is a test page **Holla*
+This is a test page **Holla**
