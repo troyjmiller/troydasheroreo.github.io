@@ -1,225 +1,116 @@
-<!doctype html>
-<!--
-	Prologue 1.2 by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+<!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Prologue by HTML5 UP</title>
+		<title>tylrcarr's website</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
-		<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600" rel="stylesheet" type="text/css" />
-		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,300italic" rel="stylesheet" type="text/css" />
 		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.poptrox.min.js"></script>
 		<script src="js/skel.min.js"></script>
-		<script src="js/skel-panels.min.js"></script>
 		<script src="js/init.js"></script>
 		<noscript>
 			<link rel="stylesheet" href="css/skel-noscript.css" />
 			<link rel="stylesheet" href="css/style.css" />
-			<link rel="stylesheet" href="css/style-wide.css" />
 		</noscript>
-		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+		<link rel="shortcut icon" href="favicon.gif" type="image/x-icon" />
 	</head>
- 
-  <body>
+	<body>
 
 		<!-- Header -->
-			<div id="header" class="skel-panels-fixed">
-
-				<div class="top">
-
-					<!-- Logo -->
-						<div id="logo">
-							<span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span>
-							<h1 id="title">William M</h1>
-							<span class="byline">Bacon Consumer</span>
-						</div>
-
-					<!-- Nav -->
-						<nav id="nav">
-							<!--
-							
-								Prologue's nav expects links in one of two formats:
-								
-								1. Hash link (scrolls to a different section within the page)
-								
-								   <li><a href="#foobar" id="foobar-link" class="skel-panels-ignoreHref"><span class="fa fa-whatever-icon-you-want">Foobar</span></a></li>
-
-								2. Standard link (sends the user to another page/site)
-
-								   <li><a href="http://foobar.tld"><span class="fa fa-whatever-icon-you-want">Foobar</span></a></li>
-							
-							-->
-							<ul>
-								<li><a href="#top" id="top-link" class="skel-panels-ignoreHref"><span class="fa fa-home">Intro</span></a></li>
-								<li><a href="#portfolio" id="portfolio-link" class="skel-panels-ignoreHref"><span class="fa fa-th">Portfolio</span></a></li>
-								<li><a href="#about" id="about-link" class="skel-panels-ignoreHref"><span class="fa fa-user">About Me</span></a></li>
-								<li><a href="#contact" id="contact-link" class="skel-panels-ignoreHref"><span class="fa fa-envelope">Contact</span></a></li>
-							</ul>
-						</nav>
-						
+			<section id="header">
+				<header>
+					<h1>tylrcarr's website</h1>
+					<p>Definitely better than Will's</p>
+					<iframe width="420" height="315" src="//www.youtube.com/embed/JGa2vvd71ZU?autoplay=1" frameborder="0" allowfullscreen></iframe>
+					</header>
+				<footer>
+					<a href="#banner" class="button style2 scrolly scrolly-centered">Continue</a>
+				</footer>
+			</section>
+		
+		<!-- Banner -->
+			<section id="banner">
+				<header>
+					<h2>Are you Will</h2>
+				</header>
+				<a onclick="willFixer()" class="button style2">Are you Will?</a> 
+				<script> 
+					function willFixer() { 
+						var testingWill = prompt("Are you Will?"); 
+						var yesImWill = testingWill.toLowerCase(); 
+						if (yesImWill === "yes") { 
+							window.location = 'https://www.youtube.com/watch?v=oHg5SJYRHA0'; } 
+						else if (yesImWill === "no") { 
+							return; 
+						} else { 
+							alert("You didn't answer yes or no"); 
+							return; 
+							} 
+						}
+						</script>
+				<p></p>
+				<footer>
+					<a href="#first" class="button style2 scrolly">Go on</a>
+				</footer>
+			</section>
+		
+		<!-- Feature 1 -->
+			<article id="first" class="container box style1 right">
+				<a href="http://ineedchemicalx.deviantart.com/art/Time-goes-by-too-fast-335982438" class="image full"><img src="images/pic01.jpg" alt="" /></a>
+				<div class="inner">
+					<header>
+					</header>
+					<a href="http://bit.ly/1aLkaXp" class="button style4" target="_blank" >Click here to take a quick survey to fuel a debate <3</a> 
+					<br> <br>	
+					<a href="http://victorhh.com/exp/deepfry/" target="blank" class="button style4">Click here to find out what you can deep fry.</a> 
+				</div>
+			</article>
+		
+		<!-- Feature 2 -->
+			<article class="container box style1 left">
+				<a href="http://ineedchemicalx.deviantart.com/art/Kingdom-of-the-Wind-348268044" class="image full"><img src="images/pic02.jpg" alt="" /></a>
+				<div class="inner">
+					<header>
+						<h2>Look how much I can find out from your browser.</h2>
+					</header>
+					 <script type="text/javascript" src="http://api.find-ip.net/widget.js?"></script>
 				</div>
 				
-				<div class="bottom">
+		<div class="entry-content">
+		<p><object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" width="800" height="550" id="gamefile" align="middle"><param name="movie" value="/static/cubefield.swf" /><param name="quality" value="high" /><param name="wmode" value="window" /><param name="allowfullscreen" value="false" /><param name="flashvars" value="" /><embed src="/static/cubefield.swf" quality="high" width="800" height="550" name="gamefile" align="middle" wmode="window" allowfullscreen="false" flashvars="" type="application/x-shockwave-flash" pluginspage="http://www.adobe.com/go/getflashplayer" /><br />
+</object></p>
+<div style="width: 728px; margin-left: auto; margin-right: auto;">
+<script type="text/javascript"><!--
+		
+		<!-- Contact -->
+			<article class="container box style3">
+				<header>
+					<h2>Hey, Will</h2>
+					<p>Who's better now.<p>
+				</header>
+			</article>
+		
+		
+		
+		<section id="footer">
+			<ul class="icons">
+				<li><a target="blank" href="http://www.twitter.com/tylrcarr" target="_blank" class="fa fa-twitter solo"><span>Twitter</span></a></li>
+				<li><a target="blank" href="http://www.ask.fm/tylrcarr" class="fa fa-question solo"><span>Ask.fm</span></a></li>
+				<li><a href="#" class="fa fa-google-plus solo"><span>Google+</span></a></li>
+				<li><a href="#" class="fa fa-pinterest solo"><span>Pinterest</span></a></li>
+				<li><a href="#" class="fa fa-dribbble solo"><span>Dribbble</span></a></li>
+				<li><a href="#" class="fa fa-linkedin solo"><span>LinkedIn</span></a></li>
+			</ul>
+			<div class="copyright">
+				<ul class="menu">
+					<li>&copy; Tyler Carr</li>
 
-					<!-- Social Icons -->
-						<ul class="icons">
-							<li><a href="#" class="fa fa-twitter solo"><span>Twitter</span></a></li>
-							<li><a href="#" class="fa fa-facebook solo"><span>Facebook</span></a></li>
-							<li><a href="#" class="fa fa-github solo"><span>Github</span></a></li>
-							<li><a href="#" class="fa fa-dribbble solo"><span>Dribbble</span></a></li>
-							<li><a href="#" class="fa fa-envelope solo"><span>Email</span></a></li>
-						</ul>
-				
-				</div>
-			
+				</ul>
 			</div>
-
-		<!-- Main -->
-			<div id="main">
-			
-				<!-- Intro -->
-					<section id="top" class="one">
-						<div class="container">
-
-							<a href="http://ineedchemicalx.deviantart.com/art/Moonscape-381829905" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
-
-							<header>
-								<h2 class="alt">Hey! I'm <a href="http://instagram.com/wammiltich">Will</a>, and I like puns.
-							</header>
-							
-							<p>Long story short: I am a Whovian, a nerd, and I love tumblr.</p>
-			
-							<footer>
-	
-								<a href="#portfolio" class="button scrolly">Onwards!</a>
-							</footer>
-
-						</div>
-					</section>
-					
-				<!-- Portfolio -->
-					<section id="portfolio" class="two">
-						<div class="container">
-					
-							<header>
-								<h2>Portfolio</h2>
-							</header>
-							
-							<p>Heres some rad musics yo.</p>
-						
-							<div class="row">
-								<div class="4u">
-									<article class="item">
-										<iframe width="215" height="235" src="//www.youtube.com/embed/lgWtCD9T3lg?rel=0" frameborder="0" allowfullscreen></iframe>
-										<header>
-											<h3>Viking Death Metal!</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="http://ineedchemicalx.deviantart.com/art/Mind-is-a-clear-stage-375431607" class="image full"><img src="images/pic03.jpg" alt="" /></a>
-										<header>
-											<h3>Wow</h3>
-										</header>
-									</article>
-								</div>
-								<div class="4u">
-									<article class="item">
-										<a href="http://ineedchemicalx.deviantart.com/art/You-really-got-me-345249340" class="image full"><img src="images/pic04.jpg" alt="" /></a>
-										<header>
-											<h3>Such blur</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="http://ineedchemicalx.deviantart.com/art/Ad-infinitum-354203162" class="image full"><img src="images/pic05.jpg" alt="" /></a>
-										<header>
-											<h3>Ah. So art</h3>
-										</header>
-									</article>
-								</div>
-								<div class="4u">
-									<article class="item">
-										<a href="http://ineedchemicalx.deviantart.com/art/Elysium-355393900" class="image full"><img src="images/pic06.jpg" alt="" /></a>
-										<header>
-											<h3>*smiles loudly*</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="http://ineedchemicalx.deviantart.com/art/Emperor-of-the-Stars-370265193" class="image full"><img src="images/pic07.jpg" alt="" /></a>
-										<header>
-											<h3>Are these blurry for you too? Do I need to clean my glasses?</h3>
-										</header>
-									</article>
-								</div>
-							</div>
-
-						</div>
-					</section>
-
-				<!-- About Me -->
-					<section id="about" class="three">
-						<div class="container">
-
-							<header>
-								<h2>About Me</h2>
-							</header>
-
-							<a href="http://ineedchemicalx.deviantart.com/art/Pasadena-357650036" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
-							
-							<p>As I said earlier, my name is Will. Or William. Or Wolfeschlegelsteinhausenbergerdorff,whatever you wanna call me. I enjoy long walks to the refrigerator and sleepless nights on <a href="http://thetourisover.tumblr.com">tumblr</a>.</p>
-
-						</div>
-					</section>
-			
-				<!-- Contact -->
-					<section id="contact" class="four">
-						<div class="container">
-
-							<header>
-								<h2>Contact</h2>
-							</header>
-
-							<p>This section doesn't actually work nor do I want strangers contacting me, but thank you for the consideration.</p>
-							
-							<form method="post" action="#">
-								<div class="row half">
-									<div class="6u"><input type="text" class="text" name="name" placeholder="Name" /></div>
-									<div class="6u"><input type="text" class="text" name="email" placeholder="Email" /></div>
-								</div>
-								<div class="row half">
-									<div class="12u">
-										<textarea name="message" placeholder="Message"></textarea>
-									</div>
-								</div>
-								<div class="row">
-									<div class="12u">
-										<a href="#" class="button submit">Send Message</a>
-									</div>
-								</div>
-							</form>
-
-						</div>
-					</section>
-			
-			</div>
-
-		<!-- Footer -->
-			<div id="footer">
-				
-				<!-- Copyright -->
-					<div class="copyright">
-						<p>&copy; 1835 The Doctor. All rights reserved, for pankake expenses.</p>
-						<ul class="menu">
-							<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						</ul>
-					</div>
-				
-			</div>
+		</section>
 
 	</body>
-
 </html>
