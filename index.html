@@ -1,122 +1,30 @@
-<!DOCTYPE HTML>
 <html>
-	<head>
-		<title>troydasheroreo's website</title>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-		<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,300italic" rel="stylesheet" type="text/css" />
-		<script src="js/jquery.min.js"></script>
-		<script src="js/jquery.poptrox.min.js"></script>
-		<script src="js/skel.min.js"></script>
-		<script src="js/init.js"></script>
-		<noscript>
-			<link rel="stylesheet" href="css/skel-noscript.css" />
-			<link rel="stylesheet" href="css/style.css" />
-		</noscript>
-		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
-		<link rel="shortcut icon" href="favicon.gif" type="image/x-icon" />
-	</head>
-	<body>
+<body>
 
-		<!-- Header -->
-			<section id="header">
-				<header>
-					<h1>troydasheroreo's site</h1></h1>
-					<p>Definitely better than Will's</p>
-					<iframe width="420" height="315" src="//www.youtube.com/embed/JGa2vvd71ZU?autoplay=1" frameborder="0" allowfullscreen></iframe>
-					</header>
-				<footer>
-					<a href="#banner" class="button style2 scrolly scrolly-centered">Continue</a>
-				</footer>
-			</section>
-		
-		<!-- Banner -->
-			<section id="banner">
-				<header>
-					<h2>Are you Will</h2>
-				</header>
-				<a onclick="willFixer()" class="button style2">Are you Will?</a> 
-				<script> 
-					function willFixer() { 
-						var testingWill = prompt("Are you Will?"); 
-						var yesImWill = testingWill.toLowerCase(); 
-						if (yesImWill === "yes") { 
-							window.location = 'https://www.youtube.com/watch?v=oHg5SJYRHA0'; } 
-						else if (yesImWill === "no") { 
-							return; 
-						} else { 
-							alert("You didn't answer yes or no"); 
-							return; 
-							} 
-						}
-						</script>
-				<p></p>
-				<footer>
-					<a href="#first" class="button style2 scrolly">Go on</a>
-				</footer>
-			</section>
-		
-		<!-- Feature 1 -->
-			<article id="first" class="container box style1 right">
-				<a href="http://ineedchemicalx.deviantart.com/art/Time-goes-by-too-fast-335982438" class="image full"><img src="images/pic01.jpg" alt="" /></a>
-				<div class="inner">
-					<header>
-					</header>
-					<a href="http://bit.ly/1aLkaXp" class="button style4" target="_blank" >Click here to take a quick survey to fuel a debate <3</a> 
-					<br> <br>	
-					<a href="http://victorhh.com/exp/deepfry/" target="blank" class="button style4">Click here to find out what you can deep fry.</a> 
-				</div>
-			</article>
-		
-		<!-- Feature 2 -->
-			<article class="container box style1 left">
-				<a href="http://ineedchemicalx.deviantart.com/art/Kingdom-of-the-Wind-348268044" class="image full"><img src="images/pic02.jpg" alt="" /></a>
-				<div class="inner">
-					<header>
-						<h2>Look how much I can find out from your browser.</h2>
-					</header>
-					 <script type="text/javascript" src="http://api.find-ip.net/widget.js?"></script>
-				</div>
-				
-	<div class="entry-content">
-		<p><object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" width="800" height="550" id="gamefile" align="middle"><param name="movie" value="/static/cubefield.swf" /><param name="quality" value="high" /><param name="wmode" value="window" /><param name="allowfullscreen" value="false" /><param name="flashvars" value="" /><embed src="/static/cubefield.swf" quality="high" width="800" height="550" name="gamefile" align="middle" wmode="window" allowfullscreen="false" flashvars="" type="application/x-shockwave-flash" pluginspage="http://www.adobe.com/go/getflashplayer" /><br />
-</object></p>
-<div style="width: 728px; margin-left: auto; margin-right: auto;">
-<script type="text/javascript">
-google_ad_client = "ca-pub-4647744076165010";
-/* Cubefield Leaderboard */
-google_ad_slot = "2555515136";
-google_ad_width = 728;
-google_ad_height = 90;
-//-->
-		
-		<!-- Contact -->
-			<article class="container box style3">
-				<header>
-					<h2>Hey, Will</h2>
-					<p>Who's better now.<p>
-				</header>
-			</article>
-		
-		
-		
-		<section id="footer">
-			<ul class="icons">
-				<li><a target="blank" href="http://www.twitter.com/tylrcarr" target="_blank" class="fa fa-twitter solo"><span>Twitter</span></a></li>
-				<li><a target="blank" href="http://www.ask.fm/tylrcarr" class="fa fa-question solo"><span>Ask.fm</span></a></li>
-				<li><a href="#" class="fa fa-google-plus solo"><span>Google+</span></a></li>
-				<li><a href="#" class="fa fa-pinterest solo"><span>Pinterest</span></a></li>
-				<li><a href="#" class="fa fa-dribbble solo"><span>Dribbble</span></a></li>
-				<li><a href="#" class="fa fa-linkedin solo"><span>LinkedIn</span></a></li>
-			</ul>
-			<div class="copyright">
-				<ul class="menu">
-					<li>&copy; Tyler Carr</li>
+  <form>
+  <input name=question>
+  <input type=submit value="Ask 8-Ball" onclick="eightball()">
+</form>
+<div id=answer>
+  Your answer: 
+</div>
 
-				</ul>
-			</div>
-		</section>
+<script>
+function getRandomInt(min, max){
+  return Math.floor(Math.random() * (max - min)) + min;
+}
+ var answers = [
+  'yes',
+  'no',
+  'maybe',
+]
 
-	</body>
+
+var answerDiv = document.getElementById('answer')
+
+var eightball = function() {
+  answerDiv.innerHTML = answers[getRandomInt(0,3)]
+}
+</script>
+</body>
 </html>
